@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<launch>
+	<node
+		name="spawn_model_mobile_robot_base"
+		pkg="gazebo_ros"
+		type="spawn_model"
+		args="-file $(find digitizer)/models/mobile_robot_base/model.sdf -sdf -model mobile_robot_base"
+		output="screen" />
+</launch>

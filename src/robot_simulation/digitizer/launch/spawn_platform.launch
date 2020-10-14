@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<launch>
+		<node
+			name="spawn_model_platform"
+			pkg="gazebo_ros"
+			type="spawn_model"
+			args="-file $(find digitizer)/models/platform/model.sdf -sdf -model platform"
+			output="screen" />
+</launch>

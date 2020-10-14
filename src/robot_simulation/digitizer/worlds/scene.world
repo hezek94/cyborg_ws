@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <scene>
+      <shadows>0</shadows>
+      <grid>false</grid>
+    </scene>
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <model name="mobile_robot_base">
+      <pose>0.133493 -1.098367 0 0 0 0</pose>
+      <include>
+        <uri>model://mobile_robot_base</uri>
+      </include>
+    </model>
+  </world>
+</sdf>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version='1.6'>
+  <model name='platform'>
+    <link name='base_link'>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>6e-06 -0.221159 0.280082 0 -0 0</pose>
+        <mass>151.124</mass>
+        <inertia>
+          <ixx>107.321</ixx>
+          <ixy>0.000457316</ixy>
+          <ixz>-0.00091974</ixz>
+          <iyy>119.004</iyy>
+          <iyz>17.8412</iyz>
+          <izz>45.9816</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file://models/platform/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__metals_collision_2'>
+        <pose frame=''>-0.9234 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file://models/platform/meshes/metals.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__nuts_collision_3'>
+        <pose frame=''>0 -0.74522 2.0178 1.5708 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file://models/platform/meshes/nuts.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__wood_collision_4'>
+        <pose frame=''>-1.0574 -0.74522 1.0894 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file://models/platform/meshes/wood.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file://models/platform/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <visual name="visual_track">
+        <cast_shadows>false</cast_shadows>
+        <pose frame=''>0 0 0.02 0 -0 1.57</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>2.45 1.53</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://platform/materials/scripts/</uri>
+            <uri>model://platform/materials/textures</uri>
+            <name>platform/Image</name>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bolts_visual_1'>
+        <pose frame=''>-1.1364 -0.74522 0.20829 -3.14159 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file://models/platform/meshes/bolts.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.97 0.65 0.008 1</ambient>
+          <diffuse>0.97 0.65 0.008 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__metals_visual_2'>
+        <pose frame=''>-0.9234 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file://models/platform/meshes/metals.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.847 0.847 0.847 1</ambient>
+          <diffuse>0.847 0.847 0.847 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__wood_visual_4'>
+        <pose frame=''>-1.0574 -0.74522 1.0894 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file://models/platform/meshes/wood.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.4 0.2 0 1</ambient>
+          <diffuse>0.4 0.2 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name='camera'>
+      <pose frame=''>0.00162 0 1.7002 0 1.57 1.57</pose>
+      <inertial>
+        <pose frame=''>-0 0.016534 -0 0 -0 0</pose>
+        <mass>1.598e-05</mass>
+        <inertia>
+          <ixx>3.2592e-09</ixx>
+          <ixy>3.6091e-24</ixy>
+          <ixz>-3.8632e-24</ixz>
+          <iyy>1.5702e-09</iyy>
+          <iyz>4.5897e-24</iyz>
+          <izz>3.2592e-09</izz>
+        </inertia>
+      </inertial>
+      <collision name='camera_collision'>
+        <pose frame=''>0 0 0 0 -0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file://models/platform/meshes/camera.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='camera_visual'>
+        <pose frame=''>0 0 0 0 0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file://models/platform/meshes/camera.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.2 0.2 0.2 1</ambient>
+          <diffuse>0.2 0.2 0.2 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <sensor name='camera' type='camera'>
+        <update_rate>30</update_rate>
+        <camera name='head'>
+          <horizontal_fov>1.39626</horizontal_fov>
+          <image>
+            <width>800</width>
+            <height>800</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.02</near>
+            <far>300</far>
+          </clip>
+          <noise>
+            <type>gaussian</type>
+            <mean>0</mean>
+            <stddev>0.007</stddev>
+          </noise>
+        </camera>
+        <plugin name='camera_controller' filename='libgazebo_ros_camera.so'>
+          <alwaysOn>true</alwaysOn>
+          <updateRate>0.0</updateRate>
+          <cameraName>camera</cameraName>
+          <imageTopicName>image_raw</imageTopicName>
+          <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+          <frameName>base_link</frameName>
+          <hackBaseline>0.07</hackBaseline>
+          <distortionK1>0.0</distortionK1>
+          <distortionK2>0.0</distortionK2>
+          <distortionK3>0.0</distortionK3>
+          <distortionT1>0.0</distortionT1>
+          <distortionT2>0.0</distortionT2>
+        </plugin>
+      </sensor>
+    </link>
+    <joint name='camera' type='revolute'>
+      <child>camera</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>0 0 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+  </model>
+</sdf>

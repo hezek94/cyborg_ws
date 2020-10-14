@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find digitizer)/worlds/scene.world"/>
+    <arg name ="verbose" value = "true" />
+    <arg name ="paused" value = "false" />
+    <arg name ="use_sim_time" value = "true" />
+    <!-- more default parameters can be changed here -->
+  </include>
+
+  <node
+		name="spawn_model_platform"
+		pkg="gazebo_ros"
+		type="spawn_model"
+		args="-file $(find digitizer)/models/platform/model.sdf -sdf -model platform"
+		output="screen" />
+
+  <!-- <node
+		name="spawn_model_mobile_robot_base"
+		pkg="gazebo_ros"
+		type="spawn_model"
+		args="-file $(find digitizer)/models/mobile_robot_base/model.sdf -sdf -model mobile_robot_base"
+		output="screen" /> -->
+
+</launch>
