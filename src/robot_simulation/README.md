@@ -39,8 +39,4 @@ $ cd ..
 $ catkin build [package_name]
 ```
 
-License
-----
-
-MIT
 
