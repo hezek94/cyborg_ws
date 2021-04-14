@@ -1,3 +1,6 @@
+# ADITOSH ROBOT SIMULATION TASKS
+![](./images/logo3.png)
+
 AIM - Build and run simulations of a LINE FOLLOWING BOT via CAMERA INPUT using IMAGE PROCESSING.
 
 ROS - Robot Operating System
