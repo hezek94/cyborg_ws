@@ -1,5 +1,5 @@
-# CYBORG ROBOT SIMULATION TASKS
-![](./images/logo3.jpg)
+# ADITOSH ROBOT SIMULATION TASKS
+![](./images/logo3.png)
 
 ## Prerequisites
 - Ubuntu 16.04 or newer (Ubuntu 18.04 recommended)
