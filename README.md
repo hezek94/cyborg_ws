@@ -3,7 +3,7 @@
 
 # AIM - Build and run simulations of a LINE FOLLOWING BOT via CAMERA INPUT using IMAGE PROCESSING.
 
-# ROS - Robot Operating System
+ROS - Robot Operating System
 Link to ROS Line Following Bot Via Image Processing Tutorial Series: https://youtube.com/playlist?list=PLCiTDJays9rWQZwQDaIt7af65Yy_L-YR1
 
 # This tutorial series covers the following: -
