@@ -1,5 +1,5 @@
 # ADITOSH ROBOT SIMULATION TASKS
-![](./images/logo3.png)
+![](./src/robot_simulation/images/logo3.png)
 
 AIM - Build and run simulations of a LINE FOLLOWING BOT via CAMERA INPUT using IMAGE PROCESSING.
 
