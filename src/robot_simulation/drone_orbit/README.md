@@ -57,8 +57,3 @@ $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 
  - Explore hector_quadrotor
 
-License
-----
-
-MIT
-
