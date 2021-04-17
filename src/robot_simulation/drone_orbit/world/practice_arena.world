@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <scene>
+      <ambient>0.01 0.01 0.01 1.0</ambient>
+      <sky>
+        <clouds>
+          <speed>12</speed>
+        </clouds>
+      </sky>
+      <shadows>1</shadows>
+      <grid>false</grid>
+    </scene>
+
+    <static>true</static>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <model name="pillion1">
+      <static>true</static>
+      <pose>8.66025403784 -5 0 0 0 0</pose>
+      <link name="pillion1">
+        <collision name="pillion1_collision">
+        	<pose>0 0 1.2192 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.0762</radius>
+              <length>2.4384</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="pillion1_visual">
+          <cast_shadows>false</cast_shadows>
+          <pose>0 0 1.2192 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.0762</radius>
+              <length>2.4384</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+            <specular>0 0 0 0</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <population name="pillion1_red">
+      <model name="pillion1_red">
+        <static>true</static>
+        <pose>0 0 0 0 0 0</pose>
+        <link name="pillion1_red">
+          <visual name="pillion1_red_visual">
+            <cast_shadows>false</cast_shadows>
+            <pose>0 0 0.1524 0 0 0</pose>
+            <geometry>
+              <cylinder>
+                <radius>0.078</radius>
+                <length>0.3048</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <ambient>1 0 0 1</ambient>
+              <diffuse>1 0 0 1</diffuse>
+              <specular>0 0 0 0</specular>
+              <emissive>0 0 0 1</emissive>
+            </material>
+          </visual>
+        </link>
+      </model>
+      <pose>8.66025403784 -5 1.2192 0 0 0</pose>
+      <box>
+        <size>0.2 0.2 2.4384</size>
+      </box>
+      <model_count>4</model_count>
+      <distribution>
+        <type>linear-z</type>
+      </distribution>
+    </population>
+
+  </world>
+</sdf>

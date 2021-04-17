@@ -1,0 +1,222 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <scene>
+      <ambient>0.01 0.01 0.01 1.0</ambient>
+      <sky>
+        <clouds>
+          <speed>12</speed>
+        </clouds>
+      </sky>
+      <shadows>1</shadows>
+      <grid>false</grid>
+    </scene>
+
+    <spherical_coordinates>
+      <latitude_deg>56.71897669633431</latitude_deg>
+      <longitude_deg>3.515625</longitude_deg>
+    </spherical_coordinates>
+
+    <!-- Global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <model name="launch_area">
+      <static>true</static>
+      <pose>0 0 0.02 0 0 0</pose>
+      <link name="launch_area">
+        <collision name="launch_area_collision">
+        	<pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>1.5</radius>
+              <length>0.02</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="launch_area_visual">
+          <cast_shadows>false</cast_shadows>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>1.5</radius>
+              <length>0.02</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+            <specular>0 0 0 0</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="pillion1">
+      <static>true</static>
+      <pose>8.66025403784 -5 0 0 0 0</pose>
+      <link name="pillion1">
+        <collision name="pillion1_collision">
+        	<pose>0 0 1.2192 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.0762</radius>
+              <length>2.4384</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="pillion1_visual">
+          <cast_shadows>false</cast_shadows>
+          <pose>0 0 1.2192 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.0762</radius>
+              <length>2.4384</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+            <specular>0 0 0 0</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <population name="pillion1_red">
+      <model name="pillion1_red">
+        <static>true</static>
+        <pose>0 0 0 0 0 0</pose>
+        <link name="pillion1_red">
+          <visual name="pillion1_red_visual">
+            <cast_shadows>false</cast_shadows>
+            <pose>0 0 0.1524 0 0 0</pose>
+            <geometry>
+              <cylinder>
+                <radius>0.078</radius>
+                <length>0.3048</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <ambient>1 0 0 1</ambient>
+              <diffuse>1 0 0 1</diffuse>
+              <specular>0 0 0 0</specular>
+              <emissive>0 0 0 1</emissive>
+            </material>
+          </visual>
+        </link>
+      </model>
+      <pose>8.66025403784 -5 1.2192 0 0 0</pose>
+      <box>
+        <size>0.2 0.2 2.4384</size>
+      </box>
+      <model_count>4</model_count>
+      <distribution>
+        <type>linear-z</type>
+      </distribution>
+    </population>
+
+    <model name="pillion2">
+      <static>true</static>
+      <pose>408.660254038 -5 0 0 0 0</pose>
+      <link name="pillion2">
+        <collision name="pillion2_collision">
+        	<pose>0 0 1.2192 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.0762</radius>
+              <length>2.4384</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="pillion2_visual">
+          <cast_shadows>false</cast_shadows>
+          <pose>0 0 1.2192 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.0762</radius>
+              <length>2.4384</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+            <specular>0 0 0 0</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <population name="pillion2_red">
+      <model name="pillion2_red">
+        <static>true</static>
+        <pose>0 0 0 0 0 0</pose>
+        <link name="pillion2_red">
+          <visual name="pillion2_red_visual">
+            <cast_shadows>false</cast_shadows>
+            <pose>0 0 0.1524 0 0 0</pose>
+            <geometry>
+              <cylinder>
+                <radius>0.078</radius>
+                <length>0.3048</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <ambient>1 0 0 1</ambient>
+              <diffuse>1 0 0 1</diffuse>
+              <specular>0 0 0 0</specular>
+              <emissive>0 0 0 1</emissive>
+            </material>
+          </visual>
+        </link>
+      </model>
+      <pose>408.660254038 -5 1.2192 0 0 0</pose>
+      <box>
+        <size>0.2 0.2 2.4384</size>
+      </box>
+      <model_count>4</model_count>
+      <distribution>
+        <type>linear-z</type>
+      </distribution>
+    </population>
+
+    <include>
+      <uri>model://ocean</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <plugin name="underwater_current_plugin" filename="libuuv_underwater_current_ros_plugin.so">
+      <namespace>hydrodynamics</namespace>
+      <constant_current>
+        <topic>current_velocity</topic>
+        <velocity>
+          <mean>0</mean>
+          <min>0</min>
+          <max>5</max>
+          <mu>0.0</mu>
+          <noiseAmp>0.0</noiseAmp>
+        </velocity>
+
+        <horizontal_angle>
+          <mean>0</mean>
+          <min>-3.141592653589793238</min>
+          <max>3.141592653589793238</max>
+          <mu>0.0</mu>
+          <noiseAmp>0.0</noiseAmp>
+        </horizontal_angle>
+
+        <vertical_angle>
+          <mean>0</mean>
+          <min>-3.141592653589793238</min>
+          <max>3.141592653589793238</max>
+          <mu>0.0</mu>
+          <noiseAmp>0.0</noiseAmp>
+        </vertical_angle>
+      </constant_current>
+    </plugin>
+  </world>
+</sdf>
