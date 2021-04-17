@@ -1,7 +1,7 @@
 This directory contains the codes that deal with basic publisher, subscriber interaction among the various nodes of ROS for exchange of data.
 
 # ADITOSH BEGINNERS TASKS
-![](../images/logo3.png)
+![](./robot_simulation/images/logo3.png)
 
 ## Prerequisites
 - Ubuntu 16.04 or newer (Ubuntu 18.04 recommended)
